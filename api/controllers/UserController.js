@@ -43,8 +43,6 @@ _.merge(exports, {
 
   signup: function(req, res) {
 
-    console.log('hit thie signup endpoint');
-
     var Passwords = require('machinepack-passwords');
 
     Passwords.encryptPassword({
