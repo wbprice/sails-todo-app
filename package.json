@@ -14,6 +14,7 @@
     "grunt-contrib-cssmin": "~0.9.0",
     "grunt-contrib-jst": "~0.6.0",
     "grunt-contrib-less": "0.11.1",
+    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sails-linker": "~0.9.5",
@@ -22,6 +23,7 @@
     "lodash": "^3.10.1",
     "machinepack-gravatar": "^1.2.0",
     "machinepack-passwords": "^2.3.0",
+    "purecss": "^0.6.0",
     "rc": "~0.5.0",
     "sails": "~0.11.0",
     "sails-auth": "^1.3.1",
@@ -38,5 +40,8 @@
     "url": "git://github.com/blaine/sails-todo-app.git"
   },
   "author": "blaine",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "purecss": "^0.6.0"
+  }
 }
