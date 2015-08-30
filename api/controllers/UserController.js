@@ -1,5 +1,7 @@
 // api/controllers/UserController.js
 
+'use strict';
+
 var _ = require('lodash');
 var _super = require('sails-permissions/api/controllers/UserController');
 
@@ -10,7 +12,7 @@ _.merge(exports, {
 
   signup: function(req, res) {
 
-    console.log('hit the signup endpoint');
+    console.log('hit thie signup endpoint');
 
     var Passwords = require('machinepack-passwords');
 
@@ -45,7 +47,9 @@ _.merge(exports, {
                 console.log('err: ', err);
                 console.log('err.invalidAttributes: ', err.invalidAttributes);
 
-                if (err.invalidAttributes && err.invalidAttributes.email && err.invalidAttributes.email[0] && err.invalidAttributes.email[0].rule === 'unique') {
+                if (err.invalidAttributes && err.invalidAttributes.email &&
+                    err.invalidAttributes.email[0] &&
+                    err.invalidAttributes.email[0].rule === 'unique') {
                   return res.emailAddressInUse();
                 }
 
