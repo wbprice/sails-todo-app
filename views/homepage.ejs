@@ -1,21 +1,42 @@
 <header class="pure-g">
-
   <div class="pure-u-1-3">
     <h1>Sails Todo App</h1>
   </div>
-
 </header>
 
 <section class="pure-g">
 
-  <section class="pure-u-1-3">
+  <section class="pure-u-2-5">
     <h2>New here?</h2>
-    <p>Sign up today.</p>
+    <form name="signup" class="pure-form pure-form-aligned" action="/user/signup" method="post">
+      <fieldset>
+        <legend>Sign up today!</legend>
+        <div class="pure-control-group">
+          <label for="name">Name</label>
+          <input id="nane" type="text" placeholder="Name">
+        </div>
+        <div class="pure-control-group">
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="Title">
+        </div>
+        <div class="pure-control-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Email">
+        </div>
+        <div class="pure-control-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Password">
+        </div>
+      </fieldset>
+
+      <button class="pure-button">Submit</button>
+
+    </form>
 
   </section>
 
-  <section class="pure-u-2-3">
-    <h2>Login<h2>
+  <section class="pure-u-3-5">
+    <h2>Login</h2>
     <p>Good to see you again!</p>
   </section>
 
