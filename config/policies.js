@@ -40,6 +40,10 @@ module.exports.policies = {
 
   AuthController: {
     '*': ['passport']
+  },
+
+  UserController: {
+    '*': ['UserPolicy']
   }
 
   /***************************************************************************

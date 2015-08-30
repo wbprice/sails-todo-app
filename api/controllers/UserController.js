@@ -8,4 +8,12 @@ _.merge(exports, {
 
   // Extend with custom logic here by adding additional fields, methods, etc.
 
+  signup: function(req, res) {
+
+    var Passwords = require('machinepack-passwords');
+
+    console.log('hit signup route');
+
+  }
+
 });
