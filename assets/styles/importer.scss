@@ -14,10 +14,12 @@
  * or any other Grunt tasks you like.)
  */
 
-@import 'styles.scss';
+@import 'base.scss';
 
 // For example:
 //
 // @import 'foundation.scss';
 //
 // etc.
+
+@import '../../node_modules/purecss/build/pure-min.css';
